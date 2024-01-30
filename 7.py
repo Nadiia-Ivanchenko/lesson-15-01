@@ -12,7 +12,9 @@ def calculate_sum_and_multiply(arr):
     result = sum_of_even_index_elements * last_element
 
     return result
+
 # Приклади використання:
 arr1 = [0, 1, 7, 2, 4, 8]
 result1 = calculate_sum_and_multiply(arr1)
 print(result1)
+
