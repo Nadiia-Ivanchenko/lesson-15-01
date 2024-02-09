@@ -1,9 +1,9 @@
 def correct_sentence(text):
-    # Перевірка чи речення закінчується крапкою
+    # Перевірка чи речення не закінчується крапкою
     if not text.endswith('.'):
         # Виправлення речення: велика літера на початку та додавання крапки в кінці
-        text = text.capitalize() + '.'
-    return text
+        text = text + '.'
+    return text[0].upper()+text[1:]
 
 assert correct_sentence("greetings, friends") == "Greetings, friends.", 'Test1'
 assert correct_sentence("hello") == "Hello.", 'Test2'
